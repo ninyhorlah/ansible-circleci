@@ -9,7 +9,7 @@ Resources:
       ImageId: ami-052efd3df9dad4825
       InstanceType: t3.micro
       SecurityGroups:
-        Ref: secGroup
+        - !GetAtt "secGroup.GroupId"
 
   secGroup:
     Type: AWS::EC2::SecurityGroup
