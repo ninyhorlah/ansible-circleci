@@ -5,7 +5,7 @@ Resources:
   EC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      KeyName: server.pem
+      KeyName: server
       ImageId: ami-052efd3df9dad4825
       InstanceType: t3.micro
       SecurityGroupIds:
