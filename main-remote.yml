@@ -2,7 +2,7 @@
 # Exercise for setting up an ec2 server
 - name: Exercise for setting up an ec2 server
  
-  hosts: 3.91.14.223
+  hosts: all
   user: ubuntu
   become: true
   become_method: sudo
