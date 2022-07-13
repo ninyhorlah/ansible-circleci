@@ -53,5 +53,5 @@ workflows:
   infrastructure:
     jobs:
       # - create-infrastructure
-      # - configure-infrastructure
-      - smoke_test
+      - configure-infrastructure
+      # - smoke_test
