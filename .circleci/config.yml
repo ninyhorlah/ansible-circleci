@@ -3,10 +3,7 @@ version: 2.1
 orbs:
   aws-cli: circleci/aws-cli@2.0.3
 
-jobs:
-  destroy_infrastructure:
-    docker:
-      - image: amazon/aws-cli
+destroy_infrastructure:
     steps: 
       - run: 
           name: Destroy Environment
@@ -14,6 +11,8 @@ jobs:
           command: |
             aws cloudformation delete-stack --stack-name myStack-${CIRCLE_WORKFLOW_ID:0:5}
 
+
+jobs:
   create-infrastructure:
     docker:
       - image: amazon/aws-cli
