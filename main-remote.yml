@@ -1,0 +1,11 @@
+--- 
+# Exercise for setting up an ec2 server
+- name: Exercise for setting up an ec2 server
+ 
+  hosts: all 
+  user: ubuntu
+  become: true
+  become_method: sudo
+  become_user: root 
+  roles: 
+   - setup
