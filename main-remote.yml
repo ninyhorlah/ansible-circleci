@@ -9,6 +9,6 @@
   become_user: root 
   pre_tasks:
     - name: "Wait for 600 seconds for target connection to be reachable"
-      wait_for_connection: 600
+      wait_for_connection: 
   roles: 
    - setup
