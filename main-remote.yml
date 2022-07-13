@@ -6,9 +6,6 @@
   user: ubuntu
   become: true
   become_method: sudo
-  become_user: root 
-  pre_tasks:
-    - name: "Wait for 600 seconds for target connection to be reachable"
-      wait_for_connection: 
+  become_user: root  
   roles: 
    - setup
